@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Frame-Options" content="ALLOW">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <title>Time Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="time-container">
+        <div class="time-display">
+            <div class="time" id="time">00:00:00</div>
+            <div class="ampm" id="ampm">AM</div>
+            <div class="date" id="date">Loading...</div>
+            <div class="day" id="day">Loading...</div>
+            <div class="market-status" id="marketStatus">
+                <span class="status-indicator" id="statusIndicator"></span>
+                <span id="marketText">Checking market status...</span>
+            </div>
+            <div class="market-hours" id="marketHours">
+                <div class="hours-info" id="hoursInfo">Loading market hours...</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
