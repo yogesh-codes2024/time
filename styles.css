@@ -20,8 +20,8 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 24px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    padding: 40px 48px;
-    max-width: 500px;
+    padding: 28px 43px;
+    max-width: 450px;
     width: 100%;
     transition: transform 0.3s ease;
 }
@@ -35,88 +35,88 @@ body {
 }
 
 .time {
-    font-size: 56px;
+    font-size: 44px;
     font-weight: 700;
     color: #ffffff;
     letter-spacing: -1px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-variant-numeric: tabular-nums;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .ampm {
-    font-size: 18px;
+    font-size: 14px;
     color: #ffffff;
     font-weight: 600;
-    margin-bottom: 12px;
-    letter-spacing: 2px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
 }
 
 .date {
-    font-size: 18px;
+    font-size: 15px;
     color: #ffffff;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     font-weight: 500;
     opacity: 0.95;
 }
 
 .day {
-    font-size: 22px;
+    font-size: 18px;
     color: #ffffff;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
 }
 
 .market-status {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 12px 20px;
+    gap: 8px;
+    padding: 10px 16px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin-top: 20px;
-    font-size: 15px;
+    margin-top: 16px;
+    font-size: 13px;
     font-weight: 600;
     color: #ffffff;
 }
 
 .market-hours {
-    margin-top: 12px;
-    padding: 12px 16px;
+    margin-top: 10px;
+    padding: 10px 14px;
     background: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 }
 
 .india-time {
-    margin-top: 12px;
-    padding: 12px 16px;
+    margin-top: 10px;
+    padding: 10px 14px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
 }
 
 .india-time-label {
-    font-size: 11px;
+    font-size: 10px;
     color: #ffffff;
     opacity: 0.8;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
 }
 
 .india-time-value {
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
 
 .hours-info {
-    font-size: 13px;
+    font-size: 11px;
     color: #ffffff;
     text-align: center;
     line-height: 1.5;
@@ -127,7 +127,7 @@ body {
     color: #ffffff;
     font-weight: 600;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .hours-info .time-value {
@@ -136,8 +136,8 @@ body {
 }
 
 .status-indicator {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     animation: pulse 2s ease-in-out infinite;
 }
