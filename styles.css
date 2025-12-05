@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #00563F 0%, #00B27A 100%);
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,10 +16,10 @@ body {
 }
 
 .time-container {
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(135deg, #00563F 0%, #00B27A 100%);
     backdrop-filter: blur(10px);
     border-radius: 24px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     padding: 40px 48px;
     max-width: 500px;
     width: 100%;
@@ -37,16 +37,16 @@ body {
 .time {
     font-size: 56px;
     font-weight: 700;
-    color: #2d3748;
+    color: #ffffff;
     letter-spacing: -1px;
     margin-bottom: 8px;
     font-variant-numeric: tabular-nums;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .ampm {
     font-size: 18px;
-    color: #00563F;
+    color: #ffffff;
     font-weight: 600;
     margin-bottom: 12px;
     letter-spacing: 2px;
@@ -54,14 +54,15 @@ body {
 
 .date {
     font-size: 18px;
-    color: #4a5568;
+    color: #ffffff;
     margin-bottom: 6px;
     font-weight: 500;
+    opacity: 0.95;
 }
 
 .day {
     font-size: 22px;
-    color: #00563F;
+    color: #ffffff;
     font-weight: 600;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -74,36 +75,38 @@ body {
     justify-content: center;
     gap: 10px;
     padding: 12px 20px;
-    background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     margin-top: 20px;
     font-size: 15px;
     font-weight: 600;
+    color: #ffffff;
 }
 
 .market-hours {
     margin-top: 12px;
     padding: 12px 16px;
-    background: linear-gradient(135deg, #e9ecef 0%, #f6f8fb 100%);
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 10px;
 }
 
 .hours-info {
     font-size: 13px;
-    color: #4a5568;
+    color: #ffffff;
     text-align: center;
     line-height: 1.5;
+    opacity: 0.95;
 }
 
 .hours-info strong {
-    color: #2d3748;
+    color: #ffffff;
     font-weight: 600;
     display: block;
     margin-bottom: 4px;
 }
 
 .hours-info .time-value {
-    color: #667eea;
+    color: #ffffff;
     font-weight: 700;
 }
 
@@ -130,15 +133,15 @@ body {
 }
 
 #marketText.open {
-    color: #2f855a;
+    color: #ffffff;
 }
 
 #marketText.after-hours {
-    color: #c05621;
+    color: #ffffff;
 }
 
 #marketText.closed {
-    color: #c53030;
+    color: #ffffff;
 }
 
 @keyframes pulse {
