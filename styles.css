@@ -90,6 +90,31 @@ body {
     border-radius: 10px;
 }
 
+.india-time {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.india-time-label {
+    font-size: 11px;
+    color: #ffffff;
+    opacity: 0.8;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.india-time-value {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
 .hours-info {
     font-size: 13px;
     color: #ffffff;
@@ -239,6 +264,20 @@ body.compact .market-status {
 body.compact .market-hours {
     margin-top: 10px;
     padding: 10px 14px;
+}
+
+body.compact .india-time {
+    margin-top: 10px;
+    padding: 10px 14px;
+}
+
+body.compact .india-time-label {
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+body.compact .india-time-value {
+    font-size: 14px;
 }
 
 body.compact .hours-info {

@@ -157,6 +157,14 @@ function updateTime() {
         }
     }
     
+    // Get India time (IST - Indian Standard Time)
+    const indiaTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+    const indiaHours = indiaTime.getHours();
+    const indiaMinutes = String(indiaTime.getMinutes()).padStart(2, '0');
+    const indiaAmpm = indiaHours >= 12 ? 'PM' : 'AM';
+    const indiaHours12 = indiaHours % 12 || 12;
+    const indiaTimeString = `${indiaHours12}:${indiaMinutes} ${indiaAmpm}`;
+    
     // Update DOM
     document.getElementById('time').textContent = timeString;
     document.getElementById('ampm').textContent = ampm;
@@ -166,6 +174,7 @@ function updateTime() {
     document.getElementById('marketText').className = statusClass;
     document.getElementById('statusIndicator').className = `status-indicator ${statusClass}`;
     document.getElementById('hoursInfo').innerHTML = hoursText;
+    document.getElementById('indiaTimeValue').textContent = indiaTimeString;
 }
 
 // Update time immediately and then every second
