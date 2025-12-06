@@ -136,8 +136,22 @@ function updateTime() {
         marketText = 'Market Open (Trading)';
         statusClass = 'open';
     } else if (isTradingDay) {
-        marketText = 'Market Day (After Hours)';
-        statusClass = 'after-hours';
+        // Check if it's before market open or after market close
+        const etTime = new Date(now.toLocaleString("en-US", {timeZone: "America/New_York"}));
+        const hours = etTime.getHours();
+        const minutes = etTime.getMinutes();
+        const timeInMinutes = hours * 60 + minutes;
+        const marketOpen = 9 * 60 + 30; // 9:30 AM
+        const marketClose = 16 * 60; // 4:00 PM
+        
+        if (timeInMinutes < marketOpen) {
+            marketText = 'Pre-Market';
+            statusClass = 'after-hours';
+        } else {
+            // After market close, show closed
+            marketText = 'Market Closed';
+            statusClass = 'closed';
+        }
     } else {
         marketText = 'Market Closed';
         statusClass = 'closed';
